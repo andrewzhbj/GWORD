@@ -1,6 +1,5 @@
 package Grafico;
 
-
 import java.awt.BorderLayout;
 import java.awt.Canvas;
 import java.awt.Dimension;
@@ -49,12 +48,12 @@ public class Juego extends Canvas implements Runnable{
 	private synchronized void Detener(){
 		estaEjecutado = false;
 		
-		/* Join detiene de manera no "bruta" el hilo a excepción de stop */
+		/* Join detiene de manera no "bruta" el hilo a excepciÃ³n de stop */
 		try {
 			Hilo.join();
 		}catch (InterruptedException e){
 			
-			/* muestra el error, simple excepción */
+			/* muestra el error, simple excepciÃ³n */
 			e.printStackTrace();
 		}
 	}
